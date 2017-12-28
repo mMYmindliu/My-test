@@ -20,7 +20,6 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
 
     CRM_UI_Test
         |--config（配置文件）
-        
         |--driver（驱动）
         |--log（日志）
         |--reports（报告）
