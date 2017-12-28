@@ -17,16 +17,15 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
 ## 轻量级自动化测试框架目录结构
 
 现在我们很容易就把框架的结构搭建好了：
-
-    CRM_UI_Test
-        |--config（配置文件）
-        |--driver（驱动）
-        |--log（日志）
-        |--reports（报告）
-        |--test_collections（测试集）
-        |--src（业务流程方法）
-        |--utils（公共方法）
-        |--ReadMe.md（说明文件）
+CRM_UI_Test
+|--config（配置文件）
+|--driver（驱动）
+|--log（日志）
+|--reports（报告）
+|--test_collections（测试集）
+|--src（业务流程方法）
+|--utils（公共方法）
+|--ReadMe.md（说明文件）
         
    
    
