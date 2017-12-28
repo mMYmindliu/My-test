@@ -31,7 +31,7 @@ http://selenium-python-zh.readthedocs.io/en/latest/index.html
    
    
    
-## selenium webdriver简单介绍 
+ 
  
 一.selenium webdriver的特点
 
@@ -134,19 +134,92 @@ http://selenium-python-zh.readthedocs.io/en/latest/index.html
         最后一定要出来，不然是找不到在iframe之外的元素
         self.driver.switch_to.default_content()
 
+三.unittest单元测试框架
+        
+      unittest原名为PyUnit，是由java的JUnit衍生而来。对于单元测试，需要设置预先条件，对比预期结果和实际结果。  
+      
+      1.编写一个python类，继承 unittest模块中的TestCase类，这就是一个测试类。每个测试方法均以 test 开头，否则是不被unittest识别的。
+            
+            import unittest
+            from crm_test_demo import cal
+     
+            class CalTest(unittest.TestCase):
+            
+                def testA(self):
+                    expected = 6
+                    result = cal(2,4)
+                    self.assertEqual(expected,result)
+        
+                def testB(self):
+                    expected = 0
+                    result = cal(2,1)
+                    self.assertEqual(expected,result)
 
+      2.常用断言方法
+            
+            assertEqual(a,b [,msg])   检测a==b,这个方法检查a是否等于b
+            assertNotEqual(a, b)      判断a！=b
+            assertTrue(x)    bool(x) is True
+            assertFalse(x)    bool(x) is False            
+            assertIs(a, b)     a is b            
+            assertIsNot(a, b)   a is not b            
+            assertIsNone(x)     x is None            
+            assertIsNotNone(x)   x is not None            
+            assertIn(a, b)        a in b            
+            assertNotIn(a, b)      a not in b
+              ..........
 
+      3.测试前准备环境，执行完之后清理环境
 
+            class TestMathFunc(unittest.TestCase):
+                """Test mathfuc.py"""
+            
+                @classmethod
+                def setUpClass(cls):       #类方法，开始执行测试时会首先执行setUpClass
+                
+                
+                @classmethod
+                def tearDownClass(cls):    #类方法，执行测试结束时会最后执行setUpClass
+                
+          
+                def setUp(self):
+                    print "do something before test.Prepare environment."  #每次执行测试方法开始前会执行setUp
+            
+                def tearDown(self):
+                    print "do something after test.Clean up."     #每次执行测试方法结束时会执行setUp
 
+                def testA(self):
+                    expected = 6
+                    result = cal(2,4)
+                    self.assertEqual(expected,result)
+        
+                def testB(self):
+                    expected = 0
+                    result = cal(2,1)
+                    self.assertEqual(expected,result)
 
+      4.组织测试代码
+           
+           widgetTestSuite = unittest.TestSuite() #创建一个测试套件实例
+           widgetTestSuite.addTest(WidgetTestCase('test_default_size')) #添加测试用例到套件，抽取WidgetTestCase类中的test_default_size测试用例添加到testsuite
+           widgetTestSuite.addTest(WidgetTestCase('test_resize'))  #添加测试用例到套件，抽取WidgetTestCase类中的test_resize测试用例添加到testsuite
 
+           #此用法可以同时测试多个类
+           suite1 = unittest.TestLoader().loadTestsFromTestCase(TestCase1) 
+           suite2 = unittest.TestLoader().loadTestsFromTestCase(TestCase2) 
+           suite = unittest.TestSuite([suite1, suite2]) 
+           
 
-
-
-
-
-
-
+      5.使用HTMLTestRunner生成报告
+        
+           import HTMLTestRunner
+           
+           filename=str(datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
+            with open(os.path.join(REPORT_PATH,'%s.html'%filename), 'wb') as f:
+                runner = HTMLTestRunner(f, verbosity=2, title='CRM系统测试报告', description='执行人：刘志文')
+                runner.run(suite)
+      
+      
 
 
 
