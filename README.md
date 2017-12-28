@@ -57,7 +57,8 @@ http://selenium-python-zh.readthedocs.io/en/latest/index.html
           self.driver.get(self.link)
           self.driver.add_cookie({'name': 'JSESSIONID', 'value': self.jsess})
           self.driver.add_cookie({'name': 'SPRING_SECURITY_REMEMBER_ME_COOKIE', 'value': self.security})
-         c.图像识别
+	  self.driver.refresh()
+        c.图像识别
          第三方库：
              PIL : Pillow-3.3.0-cp27-cp27m-win_amd64.whl
              Pytesser：依赖于PIL ，Tesseract 了解pytesser及基本使用
