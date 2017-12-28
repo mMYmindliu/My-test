@@ -267,35 +267,6 @@ operate_end=Operation_end(end_url,chrome_driver)
 
 
 if __name__ == '__main__':
+        pass
 
-
-    VERSION = '1'
-    end = Operation_end(end_url, chrome_driver)
-    end.login()
-    end.modify_first_chance('一级建造师','一级建造师(默认)')
-    end.activate_order('15143708692888542325')
-    end.run_modify('15708487553')
-    # g=[15899513882,15899513929,15899513933,
-    #    15899513938,15899513943,15899513947,
-    #    15899513952,15899513964,15899513971,
-    # ]
-    # end.bole(g)
-
-
-
-
-
-
-    #激活订单
-    # f.activate_order('15048569107830099461')
-
-    # 修改密码
-    # mobile=[]
-    # effective_mobile=[]
-    # for i in mobile:
-    #     re = f.run_modify(i)
-    #     if re:
-    #         effective_mobile.append(i)
-    #         print('修改成功', i)
-    # print(effective_mobile)
-    # f.authurity(['101423'])
+    
