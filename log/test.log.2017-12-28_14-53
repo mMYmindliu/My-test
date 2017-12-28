@@ -1,0 +1,22 @@
+2017-12-28 14:52:54,881 - framework - sql_operation.py[line:23] - INFO - 连接数据成功！
+2017-12-28 14:52:54,978 - framework - sql_operation.py[line:51] - INFO - 已经配置升级机会上限，需重置
+2017-12-28 14:52:54,983 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签13,个数为250
+2017-12-28 14:52:54,990 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签15,个数为250
+2017-12-28 14:52:59,983 - framework - crmx.py[line:34] - INFO - CRM系统打开浏览器成功！
+2017-12-28 14:53:04,896 - framework - crmx.py[line:44] - INFO - crmx登录成功！
+2017-12-28 14:53:09,861 - framework - end.py[line:53] - INFO - end系统打开浏览器成功！
+2017-12-28 14:53:18,738 - framework - sql_operation.py[line:23] - INFO - 连接数据成功！
+2017-12-28 14:53:18,792 - framework - sql_operation.py[line:51] - INFO - 已经配置升级机会上限，需重置
+2017-12-28 14:53:19,001 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签13,个数为250
+2017-12-28 14:53:19,104 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签15,个数为250
+2017-12-28 14:53:24,021 - framework - crmx.py[line:34] - INFO - CRM系统打开浏览器成功！
+2017-12-28 14:53:33,044 - framework - crmx.py[line:44] - INFO - crmx登录成功！
+2017-12-28 14:53:37,994 - framework - end.py[line:53] - INFO - end系统打开浏览器成功！
+2017-12-28 14:53:46,667 - framework - end.py[line:62] - INFO - end登录成功！
+2017-12-28 14:53:51,855 - framework - crmx.py[line:56] - INFO - 回库
+2017-12-28 14:53:57,074 - framework - crmx.py[line:60] - INFO - 机会全部回库
+2017-12-28 14:53:57,155 - framework - crmx.py[line:75] - INFO - 点击索取升级机会按钮
+2017-12-28 14:53:57,747 - framework - crmx.py[line:83] - INFO - 操作成功！
+2017-12-28 14:54:07,671 - framework - crmx.py[line:97] - INFO - 索取机会15358283817
+2017-12-28 14:54:09,065 - framework - end.py[line:69] - INFO - end初始化页面成功！
+2017-12-28 14:54:11,438 - framework - test_crm_01.py[line:45] - INFO - data:{'ask_upgrade': ('15358283817', '低端班')}

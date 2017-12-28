@@ -1,0 +1,10 @@
+2017-12-28 14:54:21,873 - framework - end.py[line:261] - ERROR - 生成伯乐机会15358283817失败
+Traceback (most recent call last):
+  File "F:\untitled2\crm_test_demo\src\end\end.py", line 252, in bole
+    self.driver.find_element_by_xpath('//*[@id="mobile"]').send_keys(i)
+UnboundLocalError: local variable 'i' referenced before assignment
+2017-12-28 14:54:42,526 - framework - sql_operation.py[line:101] - INFO - 产生的标签为[{'label_id': 13}]
+2017-12-28 14:54:46,181 - framework - end.py[line:69] - INFO - end初始化页面成功！
+2017-12-28 14:54:48,602 - framework - test_crm_01.py[line:45] - INFO - data:{'ask_upgrade': ('15358283817', '低端班')}
+2017-12-28 14:54:54,720 - framework - mail.py[line:47] - INFO - attach file F:\untitled2\crm_test_demo\reports\2017-12-28 14-53-18.html
+2017-12-28 14:54:55,743 - framework - mail.py[line:81] - INFO - 发送邮件"自动化demo测试报告"成功! 收件人：liuzhiwen@haixue.com。如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确

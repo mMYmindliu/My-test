@@ -1,0 +1,10 @@
+2017-12-28 14:55:55,164 - framework - sql_operation.py[line:23] - INFO - 连接数据成功！
+2017-12-28 14:55:55,232 - framework - sql_operation.py[line:51] - INFO - 已经配置升级机会上限，需重置
+2017-12-28 14:55:55,443 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签13,个数为250
+2017-12-28 14:55:55,546 - framework - sql_operation.py[line:69] - INFO - 配置升级机会上限:坐席115577,标签15,个数为250
+2017-12-28 14:56:00,542 - framework - crmx.py[line:34] - INFO - CRM系统打开浏览器成功！
+2017-12-28 14:56:31,167 - framework - crmx.py[line:44] - INFO - crmx登录成功！
+2017-12-28 14:56:36,102 - framework - end.py[line:53] - INFO - end系统打开浏览器成功！
+2017-12-28 14:56:44,618 - framework - end.py[line:62] - INFO - end登录成功！
+2017-12-28 14:56:53,328 - framework - first_chance_create.py[line:79] - INFO - 打开浏览器成功！
+2017-12-28 14:56:53,645 - framework - first_chance_create.py[line:64] - INFO - 万能验证码184755

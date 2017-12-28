@@ -1,0 +1,18 @@
+2017-12-28 14:56:56,327 - framework - first_chance_create.py[line:103] - INFO - 注册机会:15899544214
+2017-12-28 14:57:03,792 - framework - first_chance_create.py[line:127] - INFO - 可以下单
+2017-12-28 14:57:09,898 - framework - first_chance_create.py[line:178] - INFO - 下单成功
+2017-12-28 14:57:16,989 - framework - end.py[line:176] - INFO - 激活订单151444428968711250167
+2017-12-28 14:57:28,156 - framework - sql_operation.py[line:88] - ERROR - 查询升级机会的标签失败
+Traceback (most recent call last):
+  File "F:\untitled2\crm_test_demo\src\data_base\sql_operation.py", line 86, in find_upgrade
+    logger.info('产生的标签为%s'%result)
+TypeError: not enough arguments for format string
+2017-12-28 14:57:29,455 - framework - end.py[line:69] - INFO - end初始化页面成功！
+2017-12-28 14:57:31,833 - framework - test_crm_01.py[line:45] - INFO - data:{'mobile_list': ['15899544214']}
+2017-12-28 14:57:31,896 - framework - test_crm_01.py[line:62] - INFO - 索取上限为500
+2017-12-28 14:57:33,264 - framework - end.py[line:69] - INFO - end初始化页面成功！
+2017-12-28 14:57:35,613 - framework - test_crm_01.py[line:45] - INFO - data:{'mobile_list': ['15899544214']}
+2017-12-28 14:57:41,345 - framework - crmx.py[line:56] - INFO - 回库
+2017-12-28 14:57:46,642 - framework - crmx.py[line:60] - INFO - 机会全部回库
+2017-12-28 14:57:46,730 - framework - crmx.py[line:75] - INFO - 点击索取升级机会按钮
+2017-12-28 14:57:47,306 - framework - crmx.py[line:83] - INFO - 操作成功！
