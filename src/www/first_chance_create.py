@@ -9,7 +9,6 @@ import selenium.webdriver.support.expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
-import requests
 from crm_test_demo.utils.log import logger
 
 
@@ -83,7 +82,6 @@ class Register():
     def register(self,code):
         '''
         此函数用于注册机会；
-        :num: 注册机会个数
         code: 验证码
         '''
 
@@ -139,8 +137,6 @@ class Register():
     def create_order(self):
         '''
         此函数用创建订单；
-        :mobile:手机号
-        :goodId：商品id  45851
         '''
         try:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/h3/a')))
@@ -184,8 +180,4 @@ haixue_operation=Register(www_url,VERSION,db_host,db_username,db_password,db_hig
 
 
 if __name__ == '__main__':
-    haixue_operation.open()
-
-    list=haixue_operation.register(haixue_operation.get_code())
-    # haixue_operation.judge_button(45851)
-    # haixue_operation.create_order()
+        pass
