@@ -38,8 +38,8 @@ http://selenium-python-zh.readthedocs.io/en/latest/index.html
     1.由浏览器原生的API封装而成
     2.可以直接操作浏览器页面里的元素
     3.可以操作浏览器本身（截屏，窗口大小，启动，关闭）
-    3.可以执行js代码来实现自己对浏览器的操作
-    3.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
+    4.可以执行js代码来实现自己对浏览器的操作
+    5.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
 
 二.selenium webdriver操作浏览器
 
