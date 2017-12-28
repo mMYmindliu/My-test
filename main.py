@@ -28,7 +28,7 @@ if __name__ == '__main__':
     filename=str(datetime.now().strftime('%Y-%m-%d %H-%M-%S'))
 
     with open(os.path.join(REPORT_PATH,'%s.html'%filename), 'wb') as f:
-        runner = HTMLTestRunner(f, verbosity=2, title='CRM系统测试报告', description='执行人：刘志文')
+        runner = HTMLTestRunner(f, verbosity=2, title='CRM系统测试报告', description='执行人：Mr.Liu')
         runner.run(suite)
 
 
