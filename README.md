@@ -16,26 +16,43 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
    
 ## 轻量级自动化测试框架目录结构
 
-现在我们很容易就把框架的结构搭建好了：
-CRM_UI_Test
-|--config（配置文件）
-|--driver（驱动）
-|--log（日志）
-|--reports（报告）
-|--test_collections（测试集）
-|--src（业务流程方法）
-|--utils（公共方法）
-|--ReadMe.md（说明文件）
+    现在我们很容易就把框架的结构搭建好了：
+    CRM_UI_Test
+    |--config（配置文件）
+    |--driver（驱动）
+    |--log（日志）
+    |--reports（报告）
+    |--test_collections（测试集）
+    |--src（业务流程方法）
+    |--utils（公共方法）
+    |--ReadMe.md（说明文件）
         
    
    
    
    
 ## selenium webdriver简单介绍 
-  
-1.由浏览器原生的API封装而成
-2.可以直接操作浏览器页面里的元素
-3.可以操作浏览器本身（截屏，窗口大小，启动，关闭）
-4.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
+ 
+ 一.selenium webdriver的特点
+
+    1.由浏览器原生的API封装而成
+    2.可以直接操作浏览器页面里的元素
+    3.可以操作浏览器本身（截屏，窗口大小，启动，关闭）
+    4.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
+
+
+二.selenium webdriver开启浏览器
+
+    from selenium import webdriver
+    self.driver = webdriver.Chrome(self.chrome_driver)
+    self.driver.maximize_window()
+    self.driver.get(self.url)
+
+
+
+
+
+
+
 
       
