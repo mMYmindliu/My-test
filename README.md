@@ -9,6 +9,7 @@ https://docs.python.org/2/library/unittest.html
 
 selenium
 https://github.com/SeleniumHQ/selenium/tree/master/py
+http://selenium-python-zh.readthedocs.io/en/latest/index.html
 
 1. 请确保你已经掌握了基本的Python语法
 2. 请确保你大概了解python的单元测试框架unittest
@@ -104,15 +105,34 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
       js='document.getElementsByClassName("reg-input reg-mobAuth")[0].disabled=false;'
       self.driver.execute_script(js)
       
-    7.下拉框和iframe
-      
-
-
-
+    7.下拉框和iframe的处理
     
-
-
-
+        下拉框
+                   <select name="levelTwo" id="levelTwoId">
+	                    <option value="3" selected="selected">会计从业资格</option>
+						<option value="5">司法考试</option>
+						<option value="7">注册会计师</option>
+				        <option value="9">一级建造师</option>
+						<option value="12">经济师</option>
+						<option value="14">初级会计职称</option>
+					    <option value="15">中级会计职称</option>
+						<option value="16">二级建造师</option>					
+					</select>
+        
+        
+        from selenium.webdriver.support.select import Select
+        
+        s1 = Select(self.driver.find_element_by_id('levelTwoId'))
+        s1.select_by_visible_text(parent_category)
+        
+        iframe
+                 <iframe name="main-iframe" id="main-iframe" width="100%" height="auto" scrolling="Auto" 
+                    frameborder="0" allowtransparency="true" src="/user/findAll.do" style="height: 336px;"></iframe>
+    
+        先进入，然后才能对iframe下的元素进行操作
+        self.driver.switch_to.frame(self.driver.find_element_by_xpath('//*[@id="main-iframe"]'))
+        最后一定要出来，不然是找不到在iframe之外的元素
+        self.driver.switch_to.default_content()
 
 
 
