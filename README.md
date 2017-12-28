@@ -38,20 +38,20 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
     2.可以直接操作浏览器页面里的元素
     3.可以操作浏览器本身（截屏，窗口大小，启动，关闭）
     4.可以执行js代码来实现自己对浏览器的操作
-    4.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
+    5.由于不同的浏览器厂商，对Web元素的操作和呈现多少会有一些差异，这就直接导致了Selenium WebDriver要分浏览器厂商不同，而提供不同的实现。 
 
 
 二.selenium webdriver操作浏览器
 
-    1.开启浏览器并打开访问网址
-    from selenium import webdriver
+    开启浏览器并打开访问网址
+    from selenium import webdriver
     self.driver = webdriver.Chrome(self.chrome_driver)
     self.driver.maximize_window()
     self.driver.get(self.url)
     
-    2.系统登录
-    a.手动输入
-      设置一个等待时间，然后手动输入账号、密码、验证码
+    系统登录
+    a.手动输入
+       设置一个等待时间，然后手动输入账号、密码、验证码
     b.利用cookie
       self.driver.get(self.link)
       self.driver.add_cookie({'name': 'JSESSIONID', 'value': self.jsess})
@@ -101,11 +101,11 @@ https://github.com/SeleniumHQ/selenium/tree/master/py
        隐性等待: WebDriverWait(self.driver, time).until(
                 expected_conditions.presence_of_element_located((By.XPATH, localator)),要比time.sleep(10)更加智能一些。
     
-    5.执行js脚本
+     5.执行js脚本
       js='document.getElementsByClassName("reg-input reg-mobAuth")[0].disabled=false;'
       self.driver.execute_script(js)
       
-    6.下拉框和iframe
+     6.下拉框和iframe
       
 
 
