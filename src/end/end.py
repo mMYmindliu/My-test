@@ -61,13 +61,7 @@ class Operation_end():
         self.action.key_down(Keys.ESCAPE).key_up(Keys.ESCAPE).perform()
         logger.info('end登录成功！')
 
-    def initial_login(self):
-
-        self.driver.get(self.url)
-        time.sleep(1)
-        self.action.key_down(Keys.ESCAPE).key_up(Keys.ESCAPE).perform()
-        logger.info('end初始化页面成功！')
-
+  
 
     def run_modify(self, mobile):
         '''
@@ -196,7 +190,7 @@ class Operation_end():
             self.driver.find_element_by_xpath('//*[@id="main-index-con"]/div[1]/div/ul/li[15]').click()
 
         if 't0' in self.driver.current_url:
-            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="CRM"]/ul/li[24]')))
+            WebDriverWait(self.duriver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="CRM"]/ul/li[24]')))
             self.driver.find_element_by_xpath('//*[@id="CRM"]/ul/li[24]').click()
         else:
             WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.XPATH, '//*[@id="CRM"]/ul/li[25]')))
