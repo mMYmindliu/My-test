@@ -113,13 +113,4 @@ sql=SQL_first_chance(db_host,db_username,db_password,db_highso)
 
 if __name__ == '__main__':
 
-    s=SQL_first_chance(db_host,db_username,db_password,db_highso)
-    s.connect_sql()
-    # s.delete(115577,100167)
-    #
-    # s.update_chance(115577,100181,100175,30,11)
-    s.find_label(15899528039)
-
-    # s.update_chance(115577,100051,9,10,11)
-
-    # s.find_upgrade('15899514896')
+   pass
