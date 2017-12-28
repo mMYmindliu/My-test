@@ -7,10 +7,8 @@ https://www.python.org
 unittest
 https://docs.python.org/2/library/unittest.html
 
-selenium
-
-	https://github.com/SeleniumHQ/selenium/tree/master/py
-	http://selenium-python-zh.readthedocs.io/en/latest/index.html
+selenium  https://github.com/SeleniumHQ/selenium/tree/master/py
+	  http://selenium-python-zh.readthedocs.io/en/latest/index.html
 
 1. 请确保你已经掌握了基本的Python语法
 2. 请确保你大概了解python的单元测试框架unittest
