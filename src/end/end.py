@@ -178,7 +178,7 @@ class Operation_end():
 
     def bole(self,mobile):
         '''
-        此函数用于激活订单；
+        此函数用于产生伯乐订单；
         :mobile_list: 电话号码列表
         '''
         time.sleep(2)
