@@ -1,6 +1,5 @@
 # My-test 
 crm_testing
-
 python3
 https://www.python.org
 
@@ -8,12 +7,7 @@ unittest
 https://docs.python.org/2/library/unittest.html
 
 selenium
-https://github.com/SeleniumHQ/selenium/tree/master/py
 http://selenium-python-zh.readthedocs.io/en/latest/index.html
-
-1. 请确保你已经掌握了基本的Python语法
-2. 请确保你大概了解python的单元测试框架unittest
-3. 请确保你大概了解基本的selenium webdriver相关api
    
 ## 轻量级自动化测试框架目录结构
 
@@ -43,11 +37,12 @@ http://selenium-python-zh.readthedocs.io/en/latest/index.html
 
 二.selenium webdriver操作浏览器
 
-    1.开启浏览器并打开访问网址
+    1.开启和关闭浏览器、打开访问网址
     from selenium import webdriver
     self.driver = webdriver.Chrome(self.chrome_driver)
     self.driver.maximize_window()
     self.driver.get(self.url)
+    self.driver.quit()
     
     2.系统登录
         a.手动输入
